@@ -1,0 +1,55 @@
+.product-tile {
+    display: grid;
+    grid-template-columns: 190px 20px;
+    text-align: center;
+}
+
+.product-tile:hover .product-button {
+    background-color: gold;
+    color: black;
+}
+
+.product-image {
+    grid-column: 1;
+    grid-row: 1;
+    width: 190px;
+}
+
+.product-title {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.product-price {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.product-price strong {
+    font-size: larger;
+}
+
+.product-button {
+    grid-column: 1;
+    grid-row: 4;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.product-button:active {
+    transform: scale(0.95);
+}
+
+
+.product-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3px;
+    grid-column: 2;
+    grid-row: 1;
+}
+

@@ -1,0 +1,141 @@
+.cart {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cart-item {
+    gap: 5px;
+    display: grid;
+    grid-template-columns: 60px auto;
+    grid-template-rows: repeat(3, 24px);
+}
+
+.cart-item-image {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    width: 100%;
+}
+
+.cart-item-name {
+    grid-column: 2;
+    grid-row: 1;
+    font-weight: bold;
+    font-size: large;
+}
+
+.cart-item-quantity {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item-quantity-button {
+    display: grid;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+.cart-item-quantity-button:hover {
+    border-radius: 16px;
+    background-color: #eee;
+}
+
+.cart-item-quantity-button:active {
+    transform: scale(0.95);
+}
+
+.cart-item-quantity-input {
+    width: 70px;
+    font-size: small;
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item-quantity-input:focus {
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+.cart-item-detail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-item-detail-detail {
+    display: flex;
+    gap: 10px;
+}
+
+.cart-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-empty img {
+    width: 100px;
+}
+
+.cart-empty h2 {
+    font-weight: bold;
+}
+
+.cart-summary {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.cart-summary strong {
+    font-size: large;
+}
+
+.cart-summary span {
+    justify-self: end;
+}
+
+.cart-checkout {
+    margin-top: 20px;
+    background-color: gold;
+    padding: 10px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.cart-checkout:hover {
+    box-shadow: 5px 0 rgba(0, 0, 0, 0.1) inset;
+}
+
+.cart-checkout:active {
+    transform: scale(0.95);
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

@@ -1,0 +1,26 @@
+.form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-input-field {
+    display: flex;
+}
+
+.form-input-field input {
+    flex-grow: 1;
+    padding: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.input-icon {
+    border-radius: 5px 0 0 5px;
+    background-color: #eee;
+    border-right: none;
+    height: 38px;
+    width: 38px;
+}

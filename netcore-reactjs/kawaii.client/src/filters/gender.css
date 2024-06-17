@@ -1,0 +1,40 @@
+.gender-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gender-filter-options {
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+}
+
+.gender-filter-btn {
+    padding: 10px;
+    text-align: center;
+    background-color: #eee;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.gender-filter-btn-selected {
+    background-color: black;
+    color: white;
+}
+
+.gender-filter-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.gender-filter-btn:active {
+    transform: scale(0.95);
+}
+
+.gender-filter-left {
+    border-radius: 10px 0 0 10px;
+}
+
+.gender-filter-right {
+    border-radius: 0 10px 10px 0;
+}

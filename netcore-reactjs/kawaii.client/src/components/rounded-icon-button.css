@@ -1,0 +1,18 @@
+.rounded-icon-button {
+    display: grid;
+    width: 28px;
+    height: 28px;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    border: 1px solid #aaa;
+    border-radius: 14px;
+}
+
+.rounded-icon-button:hover {
+    background-color: #eee;
+}
+
+.rounded-icon-button:active {
+    transform: scale(0.95);
+}

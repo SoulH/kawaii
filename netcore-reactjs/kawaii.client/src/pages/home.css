@@ -1,0 +1,47 @@
+.home-grid {
+    display: grid;
+    grid-template-columns: 200px auto 50px;
+    grid-template-rows: 50px 50px auto;
+}
+
+.home-grid-small {
+    display: grid;
+    grid-template-columns: 0 auto 50px;
+    grid-template-rows: 50px 50px auto;
+}
+
+.home-result-counter {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.home-results {
+    display: grid;
+    gap: 10px;
+    grid-column: 2;
+    grid-row: 3;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 210px);
+}
+
+.home-search {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-filters {
+    grid-column: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.home-sidebar {
+    grid-column: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}

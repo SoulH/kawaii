@@ -1,0 +1,44 @@
+.size-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.size-filter-options {
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 40px);
+    justify-content: center;
+}
+
+.size-filter-title {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin-bottom: 10px;
+}
+
+.size-filter-item {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: #eee;
+    color: #aaa;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.size-filter-item:hover {
+    background-color: black;
+    color: white;
+}
+
+.size-filter-item:active {
+    transform: scale(0.95);
+}
+
+.size-filter-item-selected {
+    background-color: black;
+    color: white;
+}
